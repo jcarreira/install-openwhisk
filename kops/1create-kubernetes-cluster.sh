@@ -47,7 +47,7 @@ kops create cluster \
 --zones=us-west-2a \
 --master-size=m3.medium --node-size=t2.medium --node-count=2 \
 --master-volume-size=16 --node-volume-size=32 \
-#--dns-zone=cirrus.com
+--dns-zone=cirrusdomain
 #--dns private
 
 

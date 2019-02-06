@@ -1,12 +1,14 @@
 whisk:
   ingress:
     name: ow-ingress
-    api_host_name: openwhisk.kubernetes.riotfork.com
-    api_host_port: 443
-    api_host_proto: https
-    type: standard
-    domain: openwhisk.kubernetes.riotfork.com
-    tls:
-      enabled: false
-    annotations:
-      kubernetes.io/ingress.class: traefik
+    api_host_name: 172.20.51.187
+    api_host_port: 443 
+    #api_host_proto: https
+    type: NodePort
+
+nginx:
+  httpsNodePort: 31001
+
+k8s:
+  persistence:
+    enabled: false
