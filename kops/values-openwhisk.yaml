@@ -1,8 +1,8 @@
 whisk:
   ingress:
     name: ow-ingress
-    api_host_name: 172.20.51.187
-    api_host_port: 443 
+    apiHostName: 172.20.58.230
+    apiHostPort: 443
     #api_host_proto: https
     type: NodePort
 
